@@ -1,0 +1,29 @@
+
+section p {
+    background-color: blue;
+    color: white
+}
+h1, h2 {
+    text-align: center;
+ }
+
+h1{
+    background-color: black;
+    color: white;
+}
+
+h2{
+    background-color: green;
+    color:  yellow;
+}
+
+thead tr:{
+    background-color: red;
+    color:  black;
+}
+tbody tr :nth-child(odd) {
+    background-color: lightblue;
+}
+tbody tr :nth-child(even) {
+    background-color: pink;
+ }
