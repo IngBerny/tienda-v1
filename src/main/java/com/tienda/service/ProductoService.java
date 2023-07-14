@@ -3,14 +3,15 @@ package com.tienda.service;
 import com.tienda.domain.Producto;
 import java.util.List;
 
+
 public interface ProductoService {
     
-    //Se declara un metodo para obtener un listado de Array de Objetos Productos
-    //Los objetos vienen de la tabla producto...
-    //Son todos los registros o solo los activos.
+    //Se declara un metodo para obetner un ArrayList de objetos productos
+    //Los objetos vienen de una tabla producto
+    //Son todos los registros o solo los activos
     public List<Producto> getProductos(boolean activos);
     
-    //Abajo se colocaran los metodos para un CRUD en semana 6
+    //Abajo se colocaran los metodos para un CURD de productos... pero en semana 6...
     // Se obtiene un Producto, a partir del id de un producto
     public Producto getProducto(Producto producto);
     
@@ -20,5 +21,4 @@ public interface ProductoService {
     
     // Se elimina el producto que tiene el id pasado por parámetro
     public void delete(Producto producto);
-            
- }
+}

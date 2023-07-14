@@ -3,14 +3,15 @@ package com.tienda.service;
 import com.tienda.domain.Categoria;
 import java.util.List;
 
+
 public interface CategoriaService {
     
-    //Se declara un metodo para obtener un listado de Array de Objetos Categorias
-    //Los objetos vienen de la tabla categoria...
-    //Son todos los registros o solo los activos.
+    //Se declara un metodo para obetner un ArrayList de objetos categorias
+    //Los objetos vienen de una tabla categoria
+    //Son todos los registros o solo los activos
     public List<Categoria> getCategorias(boolean activos);
     
-    //Abajo se colocaran los metodos para un CRUD en semana 6
+    //Abajo se colocaran los metodos para un CURD de categorias... pero en semana 6...
     // Se obtiene un Categoria, a partir del id de un categoria
     public Categoria getCategoria(Categoria categoria);
     
@@ -20,5 +21,4 @@ public interface CategoriaService {
     
     // Se elimina el categoria que tiene el id pasado por parámetro
     public void delete(Categoria categoria);
-            
- }
+}

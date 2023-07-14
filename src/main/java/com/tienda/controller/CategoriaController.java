@@ -1,4 +1,3 @@
-
 package com.tienda.controller;
 
 import com.tienda.domain.Categoria;
@@ -20,16 +19,16 @@ public class CategoriaController {
     @Autowired
     private CategoriaService categoriaService;
     
-    
     @GetMapping("/listado")
-    public String listado(Model model){
+    public String listado(Model model) {
         var categorias = categoriaService.getCategorias(false);
-        
-        model.addAttribute("categorias","categorias");
+      
+        model.addAttribute("categorias",categorias);
         model.addAttribute("totalCategorias",categorias.size());
         
         return "/categoria/listado";
     }
+    
     @GetMapping("/nuevo")
     public String categoriaNuevo(Categoria categoria) {
         return "/categoria/modifica";
@@ -65,5 +64,4 @@ public class CategoriaController {
         model.addAttribute("categoria", categoria);
         return "/categoria/modifica";
     }
-    
 }
